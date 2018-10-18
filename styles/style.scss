@@ -3,3 +3,9 @@ $blue: #1b354d;
 h1{
     color: $blue;
 }
+
+header{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
