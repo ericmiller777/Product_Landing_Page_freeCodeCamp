@@ -1,11 +1,46 @@
 $blue: #1b354d;
 
+
+* { margin:0; padding:0; }
+body{
+    width: 100%;
+}
 h1{
     color: $blue;
 }
 
 header{
-    position: fixed;
-    top: 0%;
-    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+header ul{
+    list-style: none;
+}
+#nav-objects{
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+#header-img {
+    max-width: 200px;
+    min-width: 100px;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.nav-link{
+    background: transparent;
+    border: none;
+    border-left: 1px solid black;
+    width: 100px;
+    height: 100%;
+}
+
+.nav-link:hover{
+    background: rgb(233, 232, 232);
 }
