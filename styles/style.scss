@@ -1,4 +1,7 @@
 $blue: #1b354d;
+$cream: rgb(228, 228, 228);
+$hover-color: rgb(233, 232, 232);
+$input-color: rgb(238, 238, 238);
 
 @mixin for-desktop-up {
     @media (max-width: 1200px) { @content; }
@@ -7,9 +10,6 @@ $blue: #1b354d;
 * { margin:0; padding:0; }
 body{
     width: 100%;
-}
-h1{
-    color: $blue;
 }
 
 header{
@@ -61,14 +61,14 @@ header ul li:not(#logo){
 }
 
 .nav-button:hover{
-    background: rgb(233, 232, 232);
+    background: $hover-color;
 }
 
 .container{
     display: flex;
     padding-top: 200px;
     padding-bottom: 750px;
-    background-color: rgb(228, 228, 228);
+    background-color: $cream;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -87,15 +87,17 @@ header ul li:not(#logo){
     display: flex;
     text-align: center;
 }
-#form h2{
+#form-text{
     text-align: center;
     padding-bottom: 10px;
 }
 #email{
+    background-color: $input-color;
     height: 30px;
-    width: 250px;
+    width: 345px;
     font-size: 1.5em;
 }
 #submit{
     height: 30px;
+    
 }
